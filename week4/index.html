@@ -7,16 +7,35 @@
 
     <body>
         <!-- This is an HTML comment -->
+
+        <!-- shift will indent - shift +tab will indent backwards
+        ctrl + left/right arrows to mode to star and end of line
+        ctrl + up/down arrow keys move to start or end of page
+        shift + ctrl + left/right/up/down arrows select to the start/end of a line 
+        shift + up/down arrows select per line
+        -->
+
         <!-- Site header -->
         <header>
             <!-- h1 is the most important heading. We can use 6 levels of headings fron h1 to h6 -->
             <h1>Reggie's Coffee Shop</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            
         </header>
         <!-- Starting main content of the page-->
         <main>
+            <!--Adding an on page link-->
+            <a href="#treatofweek">Treat of the Week</a>
             <!-- Article of the page. This cn be used as a stand-alone -->
             <article>
                 <h2>Our Story</h2>
+                <!-- Adding an image-->
+                <img src="./images/coffee-shop.jpg" title= "Coffe cup on a pile of beans" alt="Coffee cup on a pile of coffe beans">
                 <p>
                     We are a <em>family owned bussines</em>. Reggie is the <abbr title="Chief Executive Officer">CEO</abbr> and head barista of the shop. Maria is the pastry chef.
                 </p>
@@ -48,7 +67,7 @@
                     <li>July 27<sup>th</sup> - Live Music</li>
                 </ol>
             </section>
-            <section>
+            <section id="treatofweek">
                 <!-- Adding section for description list-->
                 <h3>Treat of the week</h3>
                 <dl>
@@ -71,6 +90,8 @@
                         </ul>
                     </dd>
                 </dl>
+                <!--Adding an external link-->
+                <a href="https://natashaskitchen.com/banana-bread-recipe-video/" target="_blank">Get the recipe!</a>
             </section>
         </main>
         <!-- Site footer-->
