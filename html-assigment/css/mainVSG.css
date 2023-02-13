@@ -1,0 +1,46 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+header h1, footer {
+    background-color: rgb(237, 175, 228);
+}
+
+.name {
+    color: rgb(142, 19, 115);
+}
+
+#my-image {
+    box-shadow: 0px 0px 2px 1px;
+    color: black;
+}
+
+aside ul li {
+    list-style: square;
+}
+
+.hobbies-list li:nth-child(odd) {
+    background-color: #cdf0af;
+}
+
+nav ul a{
+    text-decoration: none;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul a,
+nav ul:link,
+nav ul:visited {
+    color: rgb(193, 225, 253);
+    background-color: rgba(142, 26, 138, 0.566);
+    border:solid rgb(114, 9, 79);
+}
+
+nav ul .navigation,
+nav ul a:hover{
+    background-color:rgb(40, 0, 68);
+}
