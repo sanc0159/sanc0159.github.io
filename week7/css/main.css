@@ -1,0 +1,165 @@
+/*
+This is a css comment
+Shorcut for adding comment is Crtl/CMD+/
+*/
+
+body {
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    color: darkslategrey;
+    /* Adding background image*/
+    background-image: url(../images/white_brick_wall.png);
+}
+
+h1 {
+    color: lightgreen;
+}
+
+p{
+    background-color: antiquewhite;
+}
+/* Selecting multiple elements */
+h1, h2, h3, h4 {
+    text-decoration: underline;
+}
+/* Selecting child elements*/
+nav ul{
+    list-style: none;
+}
+/*Selecting child elements with multiple leves */
+nav ul a {
+    color: darkslategray;
+    text-decoration: none;
+    font-size: 1.5rem;
+    /* 1.5rem = 1.5rem x 16px = 24px */
+}
+
+/* Selenting elements with id values*/
+#treatofweek {
+    /* color image repeat position-x or position-y */
+    background: cadetblue url(../images/bread.jpg) no-repeat center;
+   
+    /*background size*/
+    background-size: cover;
+    font-size: 1.25rem;
+    /* 1.25rem x 16px = 20px */
+    
+    padding: 1em;
+    /*1em x 20px = 20px */
+
+    /*viewport based unit*/
+    /*width: 100vw*/
+    /* Scroll wheel bc it has space coming from the parent, it goes out of the screen wich is not ideal*/
+    /*height: 100vh*/
+    /* Height is 100% of the screen browser size and it is dynamic*/
+}
+
+.blue-link {
+    background-color: darkslategrey;
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+.large-text {
+    font-size: 20px;
+}
+
+.white-text {
+    color: antiquewhite;
+}
+
+/* 
+  Combinators
+  direct child selector - will only select the child of the parent 
+*/
+/* css typography properties */
+
+article>p {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-transform: lowercase;
+    text-align: center;
+}
+
+/* Adjacent sibiling selector - select the element that is the very next sibiling to the selected element, if any exist */
+
+h3+ul {
+    border: 1px solid black;
+}
+
+h3~p{
+    text-transform: uppercase;
+}
+
+/* Attributes selector */
+
+[href="treatofweek"] {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+[src$=".jpg"] {
+    border: 4px solid darkslategray;
+}
+
+/* Psuedo classes */
+/* Styling navigation */
+
+nav ul a, 
+nav ul a:link, 
+nav ul a:visited {
+    background-color: antiquewhite;
+    box-shadow: -2px 2px 4px 2px black;
+}
+
+nav ul .current,
+nav ul a:hover,
+nav ul a:focus {
+    text-decoration: underline;
+}
+
+nav ul a:active {
+    box-shadow: 0 0 4px 2px black;
+}
+
+/*Position selector*/
+/*First child and last child*/
+aside ul li:first-child {
+    font-weight: bold;
+}
+
+section ol li:last-child { 
+    font-weight: bold;
+}
+
+/* Styling table*/
+
+table {
+    border-collapse: collapse;
+}
+
+/* nth-child selector - even/odd*/
+/* hex color value with 6 characters */
+tbody tr:nth-child(even) {
+    background-color: #d5836c;
+}
+
+/* Using nth-child with n */
+/* where n is 0, 1, 2, 3... until umber elements */
+table th:nth-child(n), table td:nth-child(n) {
+    border: 1px solid black;
+}
+
+/* Using formula in nth-child selected */
+table td:nth-child(2n+1) {
+    background-color: rgba(170, 30, 30, 0.2);
+}
+
+/* 
+   css specificity
+   Formula: in-line style, id, class, tag-name (0,0,0,0)
+*/
+
+footer{
+    background-color: aqua;
+}
