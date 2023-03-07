@@ -118,48 +118,47 @@ p {
 }
 
 /* Footers styles */
-.site-footer {
+.sitefooter {
     margin-top: 20px;
     padding: 20px 0;
     border-top: 2px solid #00add8;
 }
 
-.copy {
+.copyright {
     text-align: right;
 }
 
 /* DESKTOP STYLE */
 @media screen and (min-width:600px) {
-    html{
+    html {
         font-size:16px;
     }
 
-    .mobilelogo{
+    .mobilelogo {
         display:none;
     }
 
-    .desktoplogo{
+    .desktoplogo {
         display:inline-block;
         max-width:300px;
     }
 
-    .banner{
+    .banner {
         background-image: url(../images/smog-desktop.jpg);
     }
 
-    .banner h1{
+    .banner h1 {
         color:white;
     }
-
-/* Mobile app section */
-
-    .app img{
+    
+    /* Mobile app section */
+    .app img {
         width:40%;
         float:left;
         margin-right:1em;
     }
 
-    .app .btn{
+    .app .btn {
         float:right;
     }
 }
