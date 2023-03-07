@@ -81,11 +81,11 @@ p {
 }
 
 /* Header */
-.mobile-logo {
+.mobilelogo {
     max-width: 150px;
 }
 
-.desktop-logo {
+.desktoplogo {
     display: none;
 }
 
