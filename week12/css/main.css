@@ -1,0 +1,31 @@
+h1 {
+    font-family: 'Montserrat', serif;
+    font-weight: 800;
+}
+
+p i::before {
+    font-size: 2rem;
+    color: blueviolet;
+}
+
+h2 {
+    font-family: 'Montserrat', serif;
+    font-weight: 600;
+}
+
+p {
+    font-family: 'Montserrat', serif;
+    font-weight: 400;
+}
+
+.fa-house::before {
+    font-size: 2rem;
+    color: black;
+}
+
+.map iframe {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+}
