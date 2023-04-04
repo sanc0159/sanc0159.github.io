@@ -1,0 +1,78 @@
+/*Colors  #c78c06, #ffe6ac, #222 and white*/
+
+/********************
+    MOBILE FIRST
+********************/
+html {
+    font-family:'Open Sans';
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+    line-height: inherit;
+}
+
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+a,
+a:link,
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: #222;
+    background-color: #c78c06;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: bolder;
+    margin: 1em 0 0.5em;
+}
+
+h1 {
+    font-size: 5.063em;
+}
+
+h2 {
+    font-size: 3.375em;
+}
+
+h3 {
+    font-size: 2.25em;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+nav {
+    background-color: #222;
+    padding: 10px;
+}
+
+.navlist li {
+    color: #c78c06;
+    padding-bottom: 10px;
+}
+
+.logo {
+    display: flex;
+}
