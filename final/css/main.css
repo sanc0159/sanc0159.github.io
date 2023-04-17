@@ -1,8 +1,5 @@
 /*Colors  #c78c06, #ffe6ac, #222 and white*/
 
-/********************
-    MOBILE FIRST
-********************/
 html {
     font-family:'Open Sans';
     font-size: 14px;
@@ -20,23 +17,15 @@ body {
     line-height: inherit;
 }
 
-.clearfix:after {
-    content: '';
-    display: table;
-    clear: both;
-}
-
 a,
 a:link,
 a:visited {
     color: inherit;
-    text-decoration: none;
 }
 
 a:hover,
 a:focus {
     color: #222;
-    background-color: #c78c06;
 }
 
 h1,
@@ -63,6 +52,32 @@ h4 {
     font-size: 1.5em;
 }
 
+p {
+    font-size: 1em;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.max-width {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/********************
+    MOBILE FIRST
+********************/
+
+/*NAVIGATION*/
+
+.navlist .logo {
+    display: flex;
+    background-color: #c78c06;
+}
+
 nav {
     background-color: #222;
     padding: 10px;
@@ -70,9 +85,37 @@ nav {
 
 .navlist li {
     color: #c78c06;
-    padding-bottom: 10px;
+    text-align: center;
 }
 
-.logo {
-    display: flex;
+/*LoVe HAte*/
+.navlist a,
+.navlist a:link,
+.navlist a:visited {
+    display: block;
+    padding: 1em 0;
+    text-decoration: none;
+}
+
+.navlist a:hover,
+.navlist a:focus,
+.navlist a.home {
+    background-color: #c78c06;
+    color: #222;
+}
+
+.search {
+    padding-top: 5px;
+    width: 100%;
+}
+
+/*HEADER*/
+
+.banner {
+    background: url(../images/main-banner.jpg);
+    width: 100%;
+}
+
+.bannertext {
+    background-color: #2222225a;
 }
