@@ -1,9 +1,12 @@
 /*Colors  #c78c06, #ffe6ac, #222 and white*/
 
+/********************
+    MOBILE FIRST
+********************/
+
 html {
-    font-family:'Open Sans';
+    font-family: 'Open Sans';
     font-size: 14px;
-    box-sizing: border-box;
 }
 
 body {
@@ -20,12 +23,12 @@ body {
 a,
 a:link,
 a:visited {
-    color: inherit;
+    color: #c78c06;
 }
 
 a:hover,
 a:focus {
-    color: #222;
+    color: inherit;
 }
 
 h1,
@@ -33,11 +36,10 @@ h2,
 h3,
 h4 {
     font-weight: bolder;
-    margin: 1em 0 0.5em;
 }
 
 h1 {
-    font-size: 5.063em;
+    font-size: 4.5em;
 }
 
 h2 {
@@ -49,11 +51,12 @@ h3 {
 }
 
 h4 {
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 p {
     font-size: 1em;
+    font-weight: 500;
 }
 
 .container {
@@ -64,12 +67,7 @@ p {
 
 .max-width {
     max-width: 1200px;
-    margin: 0 auto;
 }
-
-/********************
-    MOBILE FIRST
-********************/
 
 /*NAVIGATION*/
 
@@ -105,17 +103,232 @@ nav {
 }
 
 .search {
-    padding-top: 5px;
-    width: 100%;
+    padding: 5px;
+    width: 92%;
+}
+
+.searchbutton {
+    padding: 5px;
+    color: #c78c06;
+    background-color: #222;
+    border: 1px solid #c78c06;
 }
 
 /*HEADER*/
 
 .banner {
-    background: url(../images/main-banner.jpg);
-    width: 100%;
+    background-image: url(../images/main-banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: 500px;
+    background-position: 50% 50%;
 }
 
 .bannertext {
-    background-color: #2222225a;
+    background-color: #222222b6;
+    height: 450px;
+    padding: 2em;
+}
+
+.bannertext h1 {
+    color: white;
+}
+
+.bannertext p {
+    color: white;
+    margin-bottom: 30px;
+}
+
+.conectus {
+    font-size: 1.2em;
+    margin: 10px;
+    padding: 20px;
+    background-color: #c78c06;
+    color: #222;
+}
+
+.conectus .fa-solid {
+    padding: 15px;
+}
+
+/* ABOUT US SECTION */
+
+.abouttext img {
+    width: 100%;
+}
+
+.abouttext {
+    background-color: #ffe6ac;
+    padding: 15px;
+}
+
+.abouttext p {
+    margin-bottom: 10px;
+}
+
+/* SERVICES SECTION */
+
+.services img {
+    width: 100%;
+}
+
+.services {
+    padding: 15px;
+}
+
+.card {
+    background-color: #ffe6ac;
+    margin: 10px;
+    height: 620px;
+}
+
+.card p {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    padding: 10px;
+}
+
+.servicebutton {
+    font-size: 1.2em;
+    margin: 10px;
+    padding: 30px;
+    background-color: #222;
+    color: white;
+}
+
+.servicebutton .fa-solid {
+    padding: 15px;
+}
+
+/* VISION SECTION*/
+
+.vision {
+    background-image: url(../images/vision.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 260px;
+}
+
+.visiontext {
+    color: white;
+    padding: 15px;
+}
+
+.visiontext p {
+    margin-bottom: 40px;
+}
+
+.visionbutton {
+    font-size: 1.2em;
+    color: white;
+    margin-top: 10px;
+    padding: 30px;
+    background-color: #222222ad;
+    border: 1px solid #c78c06;
+}
+
+/* OUR TEAM SECTION */
+
+.team img {
+    width: 100%;
+}
+
+.john {
+    background-color: #ffe6ac;
+    margin: 10px;
+}
+
+.john p {
+    padding: 10px;
+    border-top: 2px solid #c78c06;
+    margin-bottom: 20px;
+}
+
+.john h3,
+.john h4 {
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+.bob {
+    background-color: #ffe6ac;
+    margin: 10px;
+}
+
+.bob p {
+    padding: 10px;
+    border-top: 2px solid #c78c06;
+    margin-bottom: 20px;
+}
+
+.bob h3,
+.bob h4 {
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+/* CONTACT SECTION */
+
+.contact {
+    padding: 15px;
+}
+
+.inputs {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.sendbutton {
+    background-color: #222;
+    color: #c78c06;
+    text-decoration: none;
+    font-size: 1.3em;
+    padding: 3px;
+    margin-bottom: 50px;
+}
+
+.hourstable {
+    width: 100%;
+}
+
+th:nth-child(n),
+td:nth-child(n) {
+    border: 1px solid #222;
+    padding: 10px;
+}
+
+.hourstable thead {
+    background-color: #ffe6ac;
+    text-align: center;
+}
+
+
+.location {
+    width: 100%;
+}
+
+/* FOOTER SECTION */
+
+footer {
+    background-color: #222;
+    color: #c78c06;
+    padding: 15px;
+}
+
+/* DESKTOP STYLE */
+@media screen and (min-width:760px) {
+
+
+
+
 }

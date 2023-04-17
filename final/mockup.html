@@ -13,7 +13,10 @@
     <!-- Font links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,700&display=swap"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
         rel="stylesheet">
 
     <!-- Icon Link -->
@@ -33,11 +36,14 @@
                     <li><a href="#services">Services</a></li>
                     <li><a href="#team">Team</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <form>
+                            <input type="search" id="query" class="search" placeholder="Search">
+                            <button class="searchbutton"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+                    </li>
                 </ul>
-                <form class="search">
-                    <input type="search" id="query" placeholder="Search">
-                    <button><i class="fa-solid fa-magnifying-glass" style="color:#222"></i></button>
-                </form>
+
             </nav>
 
             <div class="banner" class="max-width">
@@ -48,7 +54,7 @@
                         nisi. Ratione perferendis omnis beatae dignissimos error illum natus doloribus distinctio,
                         voluptate
                         possimus fugiat itaque excepturi alias.</p>
-                    <a>
+                    <a class="conectus">
                         Conect with us <i class="fa-solid fa-play" style="color:black"></i>
                     </a>
                 </div>
@@ -57,7 +63,7 @@
 
         <main>
             <!--First section for About Us-->
-            <section class="about" id="about">
+            <section class="about" class="max-width">
                 <div class="abouttext">
                     <img src="images/about-us.jpg" alt="About Us">
                     <div>
@@ -88,8 +94,8 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui amet eveniet recusandae non
                                 incidunt aliquid deserunt minima aperiam. Culpa ipsam dolore error a asperiores, hic
                                 consectetur cum nesciunt autem accusamus.</p>
-                            <a>
-                                Digital Plans <i class="fa-solid fa-play" style="color:black"></i>
+                            <a class="servicebutton">
+                                Digital Plans <i class="fa-solid fa-play" style="color:white"></i>
                             </a>
                         </div>
                     </section>
@@ -101,8 +107,8 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui amet eveniet recusandae non
                                 incidunt aliquid deserunt minima aperiam. Culpa ipsam dolore error a asperiores, hic
                                 consectetur cum nesciunt autem accusamus.</p>
-                            <a>
-                                Market Plans <i class="fa-solid fa-play" style="color:black"></i>
+                            <a class="servicebutton">
+                                Market Plans <i class="fa-solid fa-play" style="color:white"></i>
                             </a>
                         </div>
                     </section>
@@ -114,8 +120,8 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui amet eveniet recusandae non
                                 incidunt aliquid deserunt minima aperiam. Culpa ipsam dolore error a asperiores, hic
                                 consectetur cum nesciunt autem accusamus.</p>
-                            <a>
-                                Video Plans <i class="fa-solid fa-play" style="color:black"></i>
+                            <a class="servicebutton">
+                                Video Plans <i class="fa-solid fa-play" style="color:white"></i>
                             </a>
                         </div>
                     </section>
@@ -123,12 +129,12 @@
                     <section class="card">
                         <img src="images/web.jpg" alt="Web Development">
                         <div class="web">
-                            <h3>We Development</h3>
+                            <h3>Web Development</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui amet eveniet recusandae non
                                 incidunt aliquid deserunt minima aperiam. Culpa ipsam dolore error a asperiores, hic
                                 consectetur cum nesciunt autem accusamus.</p>
-                            <a>
-                                Web Plans <i class="fa-solid fa-play" style="color:black"></i>
+                            <a class="servicebutton">
+                                Web Plans <i class="fa-solid fa-play" style="color:white"></i>
                             </a>
                         </div>
                     </section>
@@ -140,7 +146,7 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui amet eveniet recusandae non
                                 incidunt aliquid deserunt minima aperiam. Culpa ipsam dolore error a asperiores, hic
                                 consectetur cum nesciunt autem accusamus.</p>
-                            <a>
+                            <a class="servicebutton">
                                 Print Plans <i class="fa-solid fa-play" style="color:black"></i>
                             </a>
                         </div>
@@ -157,14 +163,14 @@
                         perferendis quis iste odio saepe voluptas aut aperiam deserunt incidunt maiores magni,
                         dignissimos
                         laboriosam? Voluptatibus, ad rem!</p>
-                    <a>
-                        Learn More <i class="fa-solid fa-play" style="color:black"></i>
+                    <a class="visionbutton">
+                        Learn More <i class="fa-solid fa-play" style="color:white"></i>
                     </a>
                 </div>
             </section>
 
             <!--Section for Team-->
-            <section class="team" id="team">
+            <section class="team">
                 <div class="teamtext">
                     <h2>Our Team</h2>
 
@@ -208,34 +214,28 @@
 
                         <div class="name">
                             <label for="fullname">Name</label>
-                            <input type="text" id="name" name="name">
+                            <br>
+                            <input type="text" class="inputs" id="name" name="name">
                         </div>
 
                         <div class="email">
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email">
+                            <br>
+                            <input type="email" class="inputs" id="email" name="email">
                         </div>
 
                         <div class="message">
                             <label for="message">Message</label>
-                            <textarea name="message" id="message"></textarea>
+                            <br>
+                            <textarea name="message" class="inputs" id="message"></textarea>
                         </div>
 
-                        <a href="#">Send</a>
-
-                        <!--Adds map-->
-                        <div class="location">
-                            <h3>Location</h3>
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9447385676012!2d-75.75712548479008!3d45.349927779099744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1ses-419!2sca!4v1680627114654!5m2!1ses-419!2sca"
-                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
+                        <a href="#" class="sendbutton">Send</a>
 
                         <!--Adds table-->
                         <div class="hours">
                             <h3>Hours of operation</h3>
-                            <table>
+                            <table class="hourstable">
                                 <thead>
                                     <tr>
                                         <th>Day</th>
@@ -254,6 +254,16 @@
                                     </tr>
                                 </tbody>
                             </table>
+
+                            <!--Adds map-->
+                            <div class="location">
+                                <h3>Location</h3>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9447385676012!2d-75.75712548479008!3d45.349927779099744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1ses-419!2sca!4v1680627114654!5m2!1ses-419!2sca"
+                                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+
                         </div>
                     </form>
                 </div>
