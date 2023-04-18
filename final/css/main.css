@@ -62,11 +62,6 @@ p {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 1em;
-}
-
-.max-width {
-    max-width: 1200px;
 }
 
 /*NAVIGATION*/
@@ -104,7 +99,7 @@ nav {
 
 .search {
     padding: 5px;
-    width: 92%;
+    width: 80%;
 }
 
 .searchbutton {
@@ -149,9 +144,6 @@ nav {
     color: #222;
 }
 
-.conectus .fa-solid {
-    padding: 15px;
-}
 
 /* ABOUT US SECTION */
 
@@ -178,32 +170,44 @@ nav {
     padding: 15px;
 }
 
-.card {
+.card1,
+.card2,
+.card3,
+.card4,
+.card5 {
     background-color: #ffe6ac;
-    margin: 10px;
-    height: 620px;
-}
-
-.card p {
-    padding: 10px;
-    margin-bottom: 20px;
-}
-
-.card h3 {
-    padding: 10px;
 }
 
 .servicebutton {
-    font-size: 1.2em;
-    margin: 10px;
-    padding: 30px;
-    background-color: #222;
+    font-family: 'Open Sans';
+    font-size: 1.3em;
     color: white;
+    background-color: #222;
+    padding: 20px;
+    margin-top: 10px;
+    width: 40%;
 }
 
-.servicebutton .fa-solid {
-    padding: 15px;
+.digital {
+    padding: 20px;
 }
+
+.marketing {
+    padding: 20px;
+}
+
+.video {
+    padding: 20px;
+}
+
+.web {
+    padding: 20px;
+}
+
+.print {
+    padding: 20px;
+}
+
 
 /* VISION SECTION*/
 
@@ -212,7 +216,6 @@ nav {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    height: 260px;
 }
 
 .visiontext {
@@ -220,59 +223,36 @@ nav {
     padding: 15px;
 }
 
-.visiontext p {
-    margin-bottom: 40px;
-}
-
 .visionbutton {
-    font-size: 1.2em;
+    font-size: 1.3em;
     color: white;
-    margin-top: 10px;
-    padding: 30px;
+    margin-top: 5px;
+    padding: 20px;
     background-color: #222222ad;
     border: 1px solid #c78c06;
 }
 
 /* OUR TEAM SECTION */
 
-.team img {
+.teamtext img {
     width: 100%;
 }
 
-.john {
+.teamtext {
     background-color: #ffe6ac;
+    margin-top: 0px;
+}
+
+.johntext,
+.bobtext {
     margin: 10px;
-}
-
-.john p {
-    padding: 10px;
-    border-top: 2px solid #c78c06;
-    margin-bottom: 20px;
-}
-
-.john h3,
-.john h4 {
-    padding-left: 10px;
     padding-bottom: 10px;
-    margin: 0;
 }
 
-.bob {
-    background-color: #ffe6ac;
-    margin: 10px;
-}
-
-.bob p {
-    padding: 10px;
+.johntext p,
+.bobtext p {
+    padding-top: 10px;
     border-top: 2px solid #c78c06;
-    margin-bottom: 20px;
-}
-
-.bob h3,
-.bob h4 {
-    padding-left: 10px;
-    padding-bottom: 10px;
-    margin: 0;
 }
 
 /* CONTACT SECTION */
@@ -325,10 +305,208 @@ footer {
     padding: 15px;
 }
 
+
+/***********************************************************************************************/
 /* DESKTOP STYLE */
+/***********************************************************************************************/
+
 @media screen and (min-width:760px) {
 
+    h1 {
+        font-size: 6em;
+    }
 
+    h2 {
+        font-size: 4em;
+    }
 
+    h3 {
+        font-size: 2.8em;
+    }
+
+    h4 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.2em;
+        font-weight: 400;
+    }
+
+    /* DESKTOP NAVIGATION*/
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        background-color: #222;
+        align-items: center;
+    }
+
+    .navlist li {
+        color: #c78c06;
+        text-align: center;
+        flex-grow: 1;
+    }
+
+    .search {
+        width: 60%;
+    }
+
+    /* DESKTOP HEADER*/
+
+    .banner {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        height: 450px;
+        background-position: 50% 50%;
+    }
+
+    .bannertext {
+        background-color: #222222b6;
+        height: 420px;
+        padding: 2em;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .conectus {
+        font-size: 1.2em;
+        margin: 0;
+        padding: 20px;
+        background-color: #c78c06;
+        color: #222;
+    }
+
+    /* DESKTOP ABOUT US SECTION */
+
+    .abouttext {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        gap: 15px;
+        background-color: #ffe6ac;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    /* DESKTOP SERVICES SECTION*/
+
+    .services h2 {
+        margin: 0 auto;
+        max-width: 1200px;
+        padding-left: 40px;
+    }
+
+    .card1,
+    .card2,
+    .card3,
+    .card4,
+    .card5 {
+        background-color: #ffe6ac;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1fr 1fr ;
+        grid-template-areas:
+            "dig dig dig mar mar mar"
+            "vid vid web web pri pri";
+        gap: 15px;
+        padding: 40px
+    }
+
+    .card1 {
+        grid-area: dig;
+    }
+
+    .card2 {
+        grid-area: mar;
+    }
+
+    .card3 {
+        grid-area: vid;
+    }
+
+    .card4 {
+        grid-area: web;
+    }
+
+    .card5 {
+        grid-area: pri;
+    }
+
+    .servicebutton {
+        width: 88%;
+    }
+
+    /* DESKTOP VISION SECTION */
+
+    .visiontext {
+        padding: 40px;
+    }
+
+    .visiontext h2 {
+        font-size: 3em;
+    }
+
+    .visionbutton {
+        margin-top: 20px;
+    }
+
+    /* DESKTOP TEAM SECTION*/
+
+    .team {
+        padding: 40px;
+    }
+
+    .john {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .bob {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .bobimg {
+        grid-column: 2;
+    }
+
+    .bobtext {
+        grid-row: 1;
+    }
+
+    /* DESKTOP CONTACT SECTION */
+
+    .contacttext {
+        padding: 40px;
+    }
+
+    .fullform {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr 1fr;
+        gap: 2em;
+    }
+
+    .location {
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    .hours {
+        grid-column: 1 / span 2;
+    }
+
+    /*DESKTOP FOOTER*/
+
+    footer {
+        padding: 40px;
+    }
 
 }
